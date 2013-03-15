@@ -11,7 +11,7 @@
         <h:form>
             <h:outputText id="outtxt" value="#{loginBean.name}"/><br/><br/>
             <h:inputText id="inttxt" value="#{loginBean.name}"/><br/>
-            <h:commandLink >
+            <h:commandLink  action="submit">
                 <f:ajax execute="inttxt" render="outtxt" ></f:ajax>
               <!-- <f:ajax event="keyup" render="outtxt"/>-->
             </h:commandLink>
